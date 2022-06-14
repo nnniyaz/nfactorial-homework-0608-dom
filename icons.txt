@@ -1,0 +1,11 @@
+// Play
+<i class="fa-solid fa-play"></i>
+
+// Pause
+<i class="fa-solid fa-pause"></i>
+
+// Volume low
+<i class="fa-solid fa-volume-low"></i>
+
+// volume high
+<i class="fa-solid fa-volume-high"></i>

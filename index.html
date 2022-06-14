@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>nfactorial-incubator-0608-domevent</title>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <!--Main Content Container-->
+        <div class="inner-header flex">
+            <div class="music-info">
+                <h1 class="head">Music Player</h1>
+
+                <div class="music-info-inner">
+                    <audio src="./songs/ЯАVЬ   Gruppa Skryptonite - Beregom (360).mp3" id="song"></audio>
+
+                    <div class="img-container">
+                        <img src="./yava.jpg" alt="music-cover" id="cover">
+                    </div>
+
+                    <h2 class="song-name">Gruppa Scriptonite</h2>
+
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+                    <div class="icons-bar">
+                        <div class="icon volume" id="volume" onclick="decreaseVolume()">
+                            <i class="fa-solid fa-volume-low"></i>
+                        </div>
+                        <div class="icon play" id="play" onclick="playAudio()">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="icon volume" id="volume" onclick="increaseVolume()">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+
+    </div>
+    <!--Header ends-->
+
+    <!--Footer starts-->
+    <div class="content flex">
+        <p>By Niyaz Nassyrov | nf-Incubator'22</p>
+    </div>
+    <!--Footer ends-->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
